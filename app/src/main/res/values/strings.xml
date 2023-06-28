@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DemoMVVMRetrofitApi</string>
+    <string name="todo">TODO</string>
+    <string name="api">API</string>
+    <string name="description">Description</string>
+    <string name="auth">Auth</string>
+    <string name="category">Category</string>
+    <string name="users">Users</string>
+    <string name="entry">Entry</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="post">Post</string>
+    <string name="job">Job</string>
+    <string name="id">ID: </string>
+    <string name="name_">Name: </string>
+    <string name="job_">Job: </string>
+    <string name="phone_">Phone: </string>
+    <string name="message_">Message: </string>
+    <string name="email_">Email: </string>
+    <string name="created_at">Created At:</string>
+    <string name="updated_at">Updated At:</string>
+    <string name="more">More</string>
+    <string name="put">Put</string>
+    <string name="delete">Delete</string>
+    <string name="device_token">Device Token</string>
+    <string name="phone">Phone Number</string>
+</resources>

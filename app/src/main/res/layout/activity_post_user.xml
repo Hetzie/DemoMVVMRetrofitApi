@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="postModel"
+            type="com.excellentwebworld.demomvvmretrofitapi.UserResponse" />
+        <variable
+            name="postServiceModel"
+            type="com.excellentwebworld.demomvvmretrofitapi.ServiceLoginResponse" />
+
+        <variable
+            name="putModel"
+            type="com.excellentwebworld.demomvvmretrofitapi.UserResponseOnUpdate" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OtherMethodUserActivity">
+
+        <EditText
+            android:id="@+id/method_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_40"
+            android:hint="@string/phone"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/method_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_40"
+            android:visibility="gone"
+            android:inputType="numberDecimal"
+            android:hint="@string/device_token"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/method_user_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:hint="@string/job"
+            app:layout_constraintTop_toBottomOf="@id/method_user_name" />
+
+        <Button
+            android:id="@+id/btn_post_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/post"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/method_user_job"
+            app:layout_constraintTop_toBottomOf="@id/method_user_job" />
+        <Button
+            android:id="@+id/btn_update_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_20"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/put"
+            app:layout_constraintEnd_toEndOf="@id/method_user_job"
+            app:layout_constraintTop_toBottomOf="@id/method_user_job" />
+        <Button
+            android:id="@+id/btn_delete_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_20"
+            android:backgroundTint="@color/clr_delete"
+            android:text="@string/delete"
+            app:layout_constraintEnd_toEndOf="@id/method_user_job"
+            app:layout_constraintTop_toBottomOf="@id/method_user_id" />
+
+        <LinearLayout
+            android:id="@+id/ll_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/btn_post_user">
+
+            <TextView
+                android:id="@+id/tv_post_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/message_+postServiceModel.message}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toBottomOf="@+id/btn_post_user" />
+
+            <TextView
+                android:id="@+id/tv_post_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/name_+postServiceModel.data.name}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_post_user_id" />
+
+            <TextView
+                android:id="@+id/tv_post_user_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/phone_+postServiceModel.data.phone}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_post_user_name" />
+
+            <TextView
+                android:id="@+id/tv_post_user_created_at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/email_+postServiceModel.data.email}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_post_user_job" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_put"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_user">
+
+            <TextView
+                android:id="@+id/tv_put_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/name_+putModel.name}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_put_user_id" />
+
+            <TextView
+                android:id="@+id/tv_put_user_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/job_+putModel.job}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_put_user_name" />
+
+            <TextView
+                android:id="@+id/tv_put_user_updated_at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_30"
+                android:text="@{@string/updated_at+putModel.updatedAt}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@+id/tv_put_user_job" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

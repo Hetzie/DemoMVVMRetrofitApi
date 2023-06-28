@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btn_post"
+        android:title="@string/post"
+        android:contentDescription="@string/post"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btn_search"
+        android:title="@string/search"
+        android:contentDescription="@string/search"
+        android:icon="@drawable/ic_round_person_search_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_entry"
+        android:title="@string/entry"
+        android:contentDescription="@string/entry"
+        android:icon="@drawable/ic_round_supervised_user_circle_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_put"
+        android:title="@string/put"
+        android:contentDescription="@string/put"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/btn_delete"
+        android:title="@string/delete"
+        android:contentDescription="@string/delete"
+        app:showAsAction="ifRoom" />
+
+</menu>

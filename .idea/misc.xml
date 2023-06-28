@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/activity_add_user.xml" value="0.1" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/activity_post_user.xml" value="0.18020833333333333" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/activity_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/add_user_dialog.xml" value="0.1" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/custom_list.xml" value="0.25677083333333334" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/entry_custom_list.xml" value="0.11354166666666667" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/other_methoda_dialog.xml" value="0.2598958333333333" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/search_user_dialog.xml" value="0.2609375" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/layout/update_dialog.xml" value="0.1" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/menu/entry_top_app_bar.xml" value="0.2609375" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/menu/top_app_bar.xml" value="0.11354166666666667" />
+        <entry key="..\:/Nafisa/FlutterProject/DemoMVVMRetrofitApi/app/src/main/res/menu/user_top_app_bar.xml" value="0.2609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

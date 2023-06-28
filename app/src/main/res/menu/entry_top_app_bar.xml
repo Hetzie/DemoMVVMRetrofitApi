@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_users"
+        android:title="@string/users"
+        android:contentDescription="@string/users"
+        android:icon="@drawable/ic_round_supervised_user_circle_24"
+        app:showAsAction="ifRoom" />
+
+</menu>

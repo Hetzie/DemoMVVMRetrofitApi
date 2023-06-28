@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/tgl_select_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20">
+
+                <Button
+                    android:id="@+id/btn_go_to_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clr_post"
+                    android:text="@string/post" />
+
+                <Button
+                    android:id="@+id/btn_go_to_put"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clr_put"
+                    android:text="@string/put" />
+
+                <Button
+                    android:id="@+id/btn_go_to_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/clr_delete"
+                    android:text="@string/delete" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
